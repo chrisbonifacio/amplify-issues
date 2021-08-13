@@ -1,0 +1,14 @@
+type Mutation {
+  addPost(title: String!, description: String!, views: Int): String
+    @http(
+      method: POST
+      url: "https://xcgzzzx2xl.execute-api.us-east-2.amazonaws.com/dev/post"
+    )
+}
+
+type Post @model {
+  id: ID!
+  title: String!
+  description: String
+  views: Int
+}

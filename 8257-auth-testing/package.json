@@ -1,0 +1,66 @@
+{
+  "name": "8257-auth-testing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^7.31.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "aws-amplify": "^4.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --watch",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "projects": [
+      {
+        "displayName": "dom",
+        "testEnvironment": "jsdom",
+        "snapshotSerializers": [
+          "enzyme-to-json/serializer"
+        ],
+        "testMatch": [
+          "**/__tests__/**/*.test.js?(x)"
+        ]
+      },
+      {
+        "displayName": "node",
+        "testEnvironment": "node",
+        "testMatch": [
+          "**/__tests__/**/*.test.node.js?(x)"
+        ]
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-test-renderer": "^17.0.2"
+  }
+}

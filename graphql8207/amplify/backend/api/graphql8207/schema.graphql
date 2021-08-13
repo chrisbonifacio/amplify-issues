@@ -1,0 +1,8 @@
+type User @model {
+  id: ID!
+  email: AWSEmail!
+  phone: AWSPhone!
+  first_name: String!
+  last_name: String!
+  profile_picture: AWSURL
+}

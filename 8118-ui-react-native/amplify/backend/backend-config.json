@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "8118uireactnative0b324d5f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

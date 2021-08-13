@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-8054graphqlapi-dev-104708-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8054graphqlapi-dev-104708-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8054graphqlapi-dev-104708-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-8054graphqlapi-dev-104708-deployment",
+      "UnauthRoleName": "amplify-8054graphqlapi-dev-104708-unauthRole",
+      "StackName": "amplify-8054graphqlapi-dev-104708",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-8054graphqlapi-dev-104708/720bdf80-9892-11eb-98a7-1266e578c117",
+      "AmplifyAppId": "d3vq9rje8m0boo"
+    }
+  }
+}

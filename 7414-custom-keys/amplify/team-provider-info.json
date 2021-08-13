@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-7414customkeys-dev-102349-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-7414customkeys-dev-102349-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-7414customkeys-dev-102349-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-7414customkeys-dev-102349-deployment",
+      "UnauthRoleName": "amplify-7414customkeys-dev-102349-unauthRole",
+      "StackName": "amplify-7414customkeys-dev-102349",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-7414customkeys-dev-102349/53f010c0-bfc0-11eb-9463-0a26b1b748b1"
+    }
+  }
+}

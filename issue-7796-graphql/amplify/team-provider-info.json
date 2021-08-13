@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-issue7796graphql-dev-120356-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue7796graphql-dev-120356-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue7796graphql-dev-120356-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-issue7796graphql-dev-120356-deployment",
+      "UnauthRoleName": "amplify-issue7796graphql-dev-120356-unauthRole",
+      "StackName": "amplify-issue7796graphql-dev-120356",
+      "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-issue7796graphql-dev-120356/6ce01cd0-eb06-11eb-902c-0a5a6d0bd460",
+      "AmplifyAppId": "d3pq0iyi6o4gia"
+    },
+    "categories": {
+      "function": {
+        "MyNodeResolver": {
+          "deploymentBucketName": "amplify-issue7796graphql-dev-120356-deployment",
+          "s3Key": "amplify-builds/MyNodeResolver-48464e364d575a794d44-build.zip"
+        }
+      }
+    }
+  }
+}

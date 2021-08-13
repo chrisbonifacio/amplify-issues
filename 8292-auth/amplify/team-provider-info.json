@@ -1,0 +1,19 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-8292auth-dev-134509-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8292auth-dev-134509-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8292auth-dev-134509-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-8292auth-dev-134509-deployment",
+      "UnauthRoleName": "amplify-8292auth-dev-134509-unauthRole",
+      "StackName": "amplify-8292auth-dev-134509",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-8292auth-dev-134509/1d7543a0-c301-11eb-9c66-0a5cf73de175"
+    },
+    "categories": {
+      "auth": {
+        "8292authba1e988f": {}
+      }
+    }
+  }
+}

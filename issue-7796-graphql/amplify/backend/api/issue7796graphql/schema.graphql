@@ -1,0 +1,8 @@
+type Query {
+  getMyPythonData: Foo @function(name: "MyPythonResolver")
+  getMyNodeData: Foo @function(name: "MyNodeResolver")
+}
+
+type Foo {
+  MyIntList: [Int]
+}

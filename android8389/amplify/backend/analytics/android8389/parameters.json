@@ -1,0 +1,21 @@
+{
+    "appName": "android8389",
+    "roleName": "pinpointLambdaRolec381a3e3",
+    "cloudformationPolicyName": "cloudformationPolicyc381a3e3",
+    "cloudWatchPolicyName": "cloudWatchPolicyc381a3e3",
+    "pinpointPolicyName": "pinpointPolicyc381a3e3",
+    "authPolicyName": "pinpoint_amplify_c381a3e3",
+    "unauthPolicyName": "pinpoint_amplify_c381a3e3",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

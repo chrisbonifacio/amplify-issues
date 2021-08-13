@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "8068datastore",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "auth8068datastore051b77ae",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
