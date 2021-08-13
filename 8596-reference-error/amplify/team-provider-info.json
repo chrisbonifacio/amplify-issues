@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-8596referenceerror-dev-152009-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8596referenceerror-dev-152009-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8596referenceerror-dev-152009-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-8596referenceerror-dev-152009-deployment",
+      "UnauthRoleName": "amplify-8596referenceerror-dev-152009-unauthRole",
+      "StackName": "amplify-8596referenceerror-dev-152009",
+      "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-8596referenceerror-dev-152009/d70cbc30-e66a-11eb-b92f-06c886e7b532",
+      "AmplifyAppId": "d2rfnxfobpjeif"
+    }
+  }
+}

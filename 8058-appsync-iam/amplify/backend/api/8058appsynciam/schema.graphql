@@ -1,0 +1,5 @@
+type Todo @model @searchable @aws_iam {
+  id: ID!
+  name: String!
+  description: String
+}

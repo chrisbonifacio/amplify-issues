@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "8445signinwithapple626ba43a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

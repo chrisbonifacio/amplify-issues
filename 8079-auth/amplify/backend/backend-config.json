@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "8079authfc5ac714": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

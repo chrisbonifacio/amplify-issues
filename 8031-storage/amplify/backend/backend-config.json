@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "8031storage50c850fa": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "8031storage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

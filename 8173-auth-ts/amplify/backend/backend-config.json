@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "8173authtsc6411639": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

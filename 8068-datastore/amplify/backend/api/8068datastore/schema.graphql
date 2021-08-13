@@ -1,0 +1,14 @@
+type Project @model {
+  id: ID!
+  name: String!
+  emails: [Email] @connection(keyName: "byProject", fields: ["id"])
+}
+
+type Email @model @key(name: "byProject", fields: ["projectID"]) {
+  id: ID!
+  title: String!
+  language: String!
+  body: String!
+  projectID: ID!
+  project: Project @connection(fields: ["projectID"])
+}

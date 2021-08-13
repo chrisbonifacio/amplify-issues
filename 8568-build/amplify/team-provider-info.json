@@ -1,0 +1,104 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-8568build-dev-124507-authRole",
+            "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8568build-dev-124507-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8568build-dev-124507-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-8568build-dev-124507-deployment",
+            "UnauthRoleName": "amplify-8568build-dev-124507-unauthRole",
+            "StackName": "amplify-8568build-dev-124507",
+            "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-8568build-dev-124507/85c5f310-e330-11eb-bf3f-06bce821a7be",
+            "AmplifyAppId": "d1zxfnpa1j5i00"
+        },
+        "categories": {
+            "auth": {
+                "8568buildadd4e810": {
+                    "userPoolId": "us-east-2_2k1cpBbFo",
+                    "userPoolName": "7066oauthgoogle21f26239_userpool_21f26239-dev",
+                    "webClientId": "6ss170lggc5p6ss8qm7538i5t1",
+                    "nativeClientId": "3duvklcsdd3lddjfj30rbfu4di",
+                    "identityPoolId": "us-east-2:1e168a10-de6f-4c5e-90fe-f75b7c15dac0",
+                    "identityPoolName": "7066oauthgoogle21f26239_identitypool_21f26239__dev",
+                    "allowUnauthenticatedIdentities": false,
+                    "authRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-authRole",
+                    "authRoleName": "amplify-7066oauthgoogle-dev-101108-authRole",
+                    "unauthRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-unauthRole",
+                    "unauthRoleName": "amplify-7066oauthgoogle-dev-101108-unauthRole"
+                }
+            }
+        }
+    },
+    "stagingz": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-8568build-stagingz-125306-authRole",
+            "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8568build-stagingz-125306-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8568build-stagingz-125306-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-8568build-stagingz-125306-deployment",
+            "UnauthRoleName": "amplify-8568build-stagingz-125306-unauthRole",
+            "StackName": "amplify-8568build-stagingz-125306",
+            "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-8568build-stagingz-125306/a2d67b40-e331-11eb-bcea-02cda7508e0e",
+            "AmplifyAppId": "d1zxfnpa1j5i00"
+        },
+        "categories": {
+            "auth": {
+                "8568buildadd4e810": {
+                    "userPoolId": "us-east-2_2k1cpBbFo",
+                    "userPoolName": "7066oauthgoogle21f26239_userpool_21f26239-dev",
+                    "webClientId": "6ss170lggc5p6ss8qm7538i5t1",
+                    "nativeClientId": "3duvklcsdd3lddjfj30rbfu4di",
+                    "identityPoolId": "us-east-2:1e168a10-de6f-4c5e-90fe-f75b7c15dac0",
+                    "identityPoolName": "7066oauthgoogle21f26239_identitypool_21f26239__dev",
+                    "allowUnauthenticatedIdentities": false,
+                    "authRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-authRole",
+                    "authRoleName": "amplify-7066oauthgoogle-dev-101108-authRole",
+                    "unauthRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-unauthRole",
+                    "unauthRoleName": "amplify-7066oauthgoogle-dev-101108-unauthRole"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1zxfnpa1j5i00",
+                    "type": "manual"
+                }
+            }
+        }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-8568build-prod-142127-authRole",
+            "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8568build-prod-142127-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8568build-prod-142127-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-8568build-prod-142127-deployment",
+            "UnauthRoleName": "amplify-8568build-prod-142127-unauthRole",
+            "StackName": "amplify-8568build-prod-142127",
+            "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-8568build-prod-142127/f9edbef0-e33d-11eb-9e04-0a728ed0c300",
+            "AmplifyAppId": "d1zxfnpa1j5i00"
+        },
+        "categories": {
+            "auth": {
+                "8568buildadd4e810": {
+                    "userPoolId": "us-east-2_2k1cpBbFo",
+                    "userPoolName": "7066oauthgoogle21f26239_userpool_21f26239-dev",
+                    "webClientId": "6ss170lggc5p6ss8qm7538i5t1",
+                    "nativeClientId": "3duvklcsdd3lddjfj30rbfu4di",
+                    "identityPoolId": "us-east-2:1e168a10-de6f-4c5e-90fe-f75b7c15dac0",
+                    "identityPoolName": "7066oauthgoogle21f26239_identitypool_21f26239__dev",
+                    "allowUnauthenticatedIdentities": false,
+                    "authRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-authRole",
+                    "authRoleName": "amplify-7066oauthgoogle-dev-101108-authRole",
+                    "unauthRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-unauthRole",
+                    "unauthRoleName": "amplify-7066oauthgoogle-dev-101108-unauthRole"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1zxfnpa1j5i00",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

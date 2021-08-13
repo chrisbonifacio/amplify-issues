@@ -1,0 +1,19 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-8409auth-dev-154048-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8409auth-dev-154048-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8409auth-dev-154048-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-8409auth-dev-154048-deployment",
+      "UnauthRoleName": "amplify-8409auth-dev-154048-unauthRole",
+      "StackName": "amplify-8409auth-dev-154048",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-8409auth-dev-154048/44155f10-c7c8-11eb-86df-0aa443d7245f"
+    },
+    "categories": {
+      "auth": {
+        "8409auth13fe1e0b": {}
+      }
+    }
+  }
+}

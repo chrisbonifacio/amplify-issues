@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "7066oauthgoogle21f26239": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

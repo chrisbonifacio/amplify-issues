@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "issue8703rnauthbc56e97f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

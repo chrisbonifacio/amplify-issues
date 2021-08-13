@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-8119auth-dev-145721-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8119auth-dev-145721-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8119auth-dev-145721-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-8119auth-dev-145721-deployment",
+      "UnauthRoleName": "amplify-8119auth-dev-145721-unauthRole",
+      "StackName": "amplify-8119auth-dev-145721",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-8119auth-dev-145721/679fbf60-a78a-11eb-b760-0ad6df532df1",
+      "AmplifyAppId": "d38drg2veikgwd"
+    },
+    "categories": {
+      "auth": {
+        "8119auth2bda61f32bda61f3": {}
+      },
+      "function": {
+        "lambdaTestREST": {
+          "deploymentBucketName": "amplify-8119auth-dev-145721-deployment",
+          "s3Key": "amplify-builds/lambdaTestREST-4a6b654d68676841782b-build.zip"
+        }
+      }
+    }
+  }
+}
