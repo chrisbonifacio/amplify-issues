@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "graphql8207",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authgraphql8207226ab2f9226ab2f9",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+type Projects
+@model(timestamps: { createdAt: "createdOn", updatedAt: "updatedOn" })
+{
+  id: ID!
+  name: String!
+  tenantId: ID!
+  freelancers: [ID]
+  childFreelancers: [ID]
+  parentProjectId: ID
+  parentClientId: ID
+  activeFlag: Boolean!
+  createdOn: AWSDateTime
+  updatedOn: AWSDateTime
+}
+
+type User
+@model(timestamps: { createdAt: "createdOn", updatedAt: "updatedOn" })
+{
+  id: ID!
+  name: String!
+}

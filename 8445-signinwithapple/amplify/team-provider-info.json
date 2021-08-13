@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-8445signinwithapple-dev-94709-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-8445signinwithapple-dev-94709-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-8445signinwithapple-dev-94709-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-8445signinwithapple-dev-94709-deployment",
+      "UnauthRoleName": "amplify-8445signinwithapple-dev-94709-unauthRole",
+      "StackName": "amplify-8445signinwithapple-dev-94709",
+      "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-8445signinwithapple-dev-94709/aeb864e0-d03b-11eb-b760-068d6d226dec",
+      "AmplifyAppId": "dapxn6sf6ndj7"
+    },
+    "categories": {
+      "auth": {
+        "8445signinwithapple626ba43a": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "lambdaTestREST",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/items"
+        }
+    ],
+    "resourceName": "api58f7c8d7",
+    "apiName": "api58f7c8d7",
+    "functionArns": [
+        {
+            "lambdaFunction": "lambdaTestREST"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-8119auth-dev-145721-authRole",
+        "unAuthRoleName": "amplify-8119auth-dev-145721-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "lambdaTestREST",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

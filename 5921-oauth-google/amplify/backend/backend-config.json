@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "5921oauthgoogle3fd0c559": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

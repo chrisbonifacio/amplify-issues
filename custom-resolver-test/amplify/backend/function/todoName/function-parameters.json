@@ -1,0 +1,15 @@
+{
+  "lambdaLayers": [],
+  "permissions": {
+    "auth": {
+      "customresolvertest2c0d2259": [
+        "read"
+      ]
+    },
+    "api": {
+      "customresolvertest": [
+        "Query"
+      ]
+    }
+  }
+}

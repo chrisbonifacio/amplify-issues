@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-7066oauthgoogle-dev-101108-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-7066oauthgoogle-dev-101108-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-7066oauthgoogle-dev-101108-deployment",
+      "UnauthRoleName": "amplify-7066oauthgoogle-dev-101108-unauthRole",
+      "StackName": "amplify-7066oauthgoogle-dev-101108",
+      "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-7066oauthgoogle-dev-101108/dde333b0-cf75-11eb-a1f2-06ac943901d0",
+      "AmplifyAppId": "dtvkx36ef9ffe"
+    },
+    "categories": {
+      "auth": {
+        "7066oauthgoogle21f26239": {}
+      }
+    }
+  }
+}

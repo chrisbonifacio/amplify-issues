@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "testapp6392dacc": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

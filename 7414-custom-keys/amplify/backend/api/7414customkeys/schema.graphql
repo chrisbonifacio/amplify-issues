@@ -1,0 +1,16 @@
+type Post
+  @model
+  @auth(rules: [{ allow: owner, operations: [create, update, delete] }]) {
+  id: ID!
+  owner: String
+  title: String!
+}
+
+type CustomPost
+  @model
+  @auth(rules: [{ allow: owner, operations: [create, update, delete] }])
+  @key(fields: ["customId"]) {
+  customId: ID!
+  owner: String
+  title: String!
+}

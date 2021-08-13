@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "7941authidentitypool983799e1": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

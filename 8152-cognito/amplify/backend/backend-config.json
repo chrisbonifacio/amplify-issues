@@ -1,0 +1,12 @@
+{
+  "auth": {
+    "8152cognitoadc1185f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "function": {},
+  "api": {}
+}
