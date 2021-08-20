@@ -1,0 +1,6 @@
+module Pods_issue8733rnbuild_issue8733rnbuildTests {
+  umbrella header "Pods-issue8733rnbuild-issue8733rnbuildTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
