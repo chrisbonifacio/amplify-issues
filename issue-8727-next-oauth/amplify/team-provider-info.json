@@ -38,12 +38,6 @@
     "categories": {
       "auth": {
         "issue8727nextoauth4a642f73": {}
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "dgjn18fsluryx",
-          "type": "manual"
-        }
       }
     }
   }
