@@ -1,0 +1,25 @@
+{
+  "name": "issue-8738-datastore-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-components": "^1.7.2",
+    "@aws-amplify/ui-react": "^1.2.9",
+    "aws-amplify": "^4.2.3",
+    "next": "11.1.0",
+    "perf_hooks": "^0.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "reactstrap": "^8.9.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0"
+  }
+}

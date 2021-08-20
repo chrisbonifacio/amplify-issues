@@ -1,0 +1,174 @@
+enum AdminRole {
+  SUPERADMIN
+  COMPANYADMIN
+  MANAGER
+}
+
+type Admin
+  @model
+  @auth(rules: [{ allow: public }])
+  @key(name: "byCompany", fields: ["companyID"]) {
+  id: ID!
+  userID: String
+  role: AdminRole
+  companyID: ID
+}
+
+type NewCourse
+  @model
+  @auth(rules: [{ allow: public }])
+  @key(name: "byProgram", fields: ["programID"]) {
+  id: ID!
+  title: String
+  programID: ID
+  description: String
+  skillTags: [String]
+  majorSkill: String
+  modelAnswerLink: String
+  videoLink: String
+  bannerImgLink: String
+  Instructor: Instructor @connection
+  instructorID: String
+}
+
+type Course
+  @model
+  @key(name: "byProgram", fields: ["programID"])
+  @auth(rules: [{ allow: public }]) {
+  id: ID!
+  title: String
+  courseNo: Int
+  slugTitle: String
+  programID: ID
+  Instructors: [CourseInstructor]
+    @connection(keyName: "byCourse", fields: ["id"])
+  description: String
+  skillTags: [String]
+  majorSkill: String
+  modelAnswer: String
+  videoCode: String
+  bannerImg: String
+}
+
+type Task @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  isSubmitted: Boolean
+  fileLink: String
+  Course: Course @connection
+  User: User @connection
+}
+
+type Settings @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  isEmailMarketingAgreed: Boolean
+}
+
+type Instructor
+  @model
+  @key(name: "byCompany", fields: ["companyID"])
+  @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String
+  lastName: String
+  jobTitle: String
+  companyID: ID
+  profileImg: String
+  profileBanner: String
+  slugTitle: String
+  programs: [ProgramInstructor]
+    @connection(keyName: "byInstructor", fields: ["id"])
+  courses: [CourseInstructor]
+    @connection(keyName: "byInstructor", fields: ["id"])
+  description: String
+  linkedin: String
+}
+
+type Certificate
+  @model
+  @auth(rules: [{ allow: public }])
+  @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  referenceID: String
+  userID: ID
+  programID: String
+}
+
+type Program
+  @model
+  @key(name: "byCompany", fields: ["companyID"])
+  @auth(rules: [{ allow: public }]) {
+  id: ID!
+  title: String
+  slugTitle: String
+  category: String
+  programLogo: String
+  programBanner: String
+  Courses: [Course] @connection(keyName: "byProgram", fields: ["id"])
+  companyID: ID
+  Company: Company @connection
+  description: String
+  introVideoCode: String
+  finalVideoCode: String
+  ProgramInstructors: [ProgramInstructor]
+    @connection(keyName: "byProgram", fields: ["id"])
+  NewCourses: [NewCourse] @connection(keyName: "byProgram", fields: ["id"])
+}
+
+type Company @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  title: String
+  slugTitle: String
+  logoImg: String
+  bannerImg: String
+  Programs: [Program] @connection(keyName: "byCompany", fields: ["id"])
+  website: String
+  description: String
+  category: String
+  logoWhite: String
+  Instructors: [Instructor] @connection(keyName: "byCompany", fields: ["id"])
+  Admins: [Admin] @connection(keyName: "byCompany", fields: ["id"])
+}
+
+type Enroll
+  @model
+  @key(name: "byUser", fields: ["userID"])
+  @auth(rules: [{ allow: public }]) {
+  id: ID!
+  User: User @connection
+  userID: ID
+  programID: String
+}
+
+type User @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  given_name: String
+  family_name: String
+  username: AWSEmail
+  Enrolls: [Enroll] @connection(keyName: "byUser", fields: ["id"])
+  Settings: Settings @connection
+  Certificates: [Certificate] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type ProgramInstructor
+  @model(queries: null)
+  @key(name: "byProgram", fields: ["programID", "instructorID"])
+  @key(name: "byInstructor", fields: ["instructorID", "programID"])
+  @auth(rules: [{ allow: public }, { allow: public }]) {
+  id: ID!
+  programID: ID!
+  instructorID: ID!
+  program: Program! @connection(fields: ["programID"])
+  instructor: Instructor! @connection(fields: ["instructorID"])
+}
+
+type CourseInstructor
+  @model(queries: null)
+  @key(name: "byCourse", fields: ["courseID", "instructorID"])
+  @key(name: "byInstructor", fields: ["instructorID", "courseID"])
+  @auth(rules: [{ allow: public }, { allow: public }]) {
+  id: ID!
+  courseID: ID!
+  instructorID: ID!
+  course: Course! @connection(fields: ["courseID"])
+  instructor: Instructor! @connection(fields: ["instructorID"])
+}
