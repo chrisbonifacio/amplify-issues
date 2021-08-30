@@ -1,6 +1,6 @@
 {
   "auth": {
-    "issue8727nextoauth4a642f73": {
+    "issue8727nextoauthf9241295": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -21,13 +21,6 @@
           "SMS"
         ]
       }
-    }
-  },
-  "hosting": {
-    "amplifyhosting": {
-      "service": "amplifyhosting",
-      "providerPlugin": "awscloudformation",
-      "type": "manual"
     }
   }
 }

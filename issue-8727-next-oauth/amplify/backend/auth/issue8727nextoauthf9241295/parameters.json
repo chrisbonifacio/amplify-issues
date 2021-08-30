@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "issue8727nextoauth4a642f73_identitypool_4a642f73",
+    "identityPoolName": "issue8727nextoauthf9241295_identitypool_f9241295",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "issue84a642f73",
-    "userPoolName": "issue8727nextoauth4a642f73_userpool_4a642f73",
+    "resourceNameTruncated": "issue8f9241295",
+    "userPoolName": "issue8727nextoauthf9241295_userpool_f9241295",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "issue84a642f73_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "issue8f9241295_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "4a642f73",
-    "resourceName": "issue8727nextoauth4a642f73",
+    "sharedId": "f9241295",
+    "resourceName": "issue8727nextoauthf9241295",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -48,16 +48,9 @@
             "Arn"
         ]
     },
-    "useDefault": "defaultSocial",
-    "hostedUI": true,
-    "hostedUIDomainName": "issue8727nextoauth4a642f73-4a642f73",
-    "authProvidersUserPool": [
-        "Google"
-    ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "useDefault": "default",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": [],
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://staging.dgjn18fsluryx.amplifyapp.com/\"],\"LogoutURLs\":[\"https://staging.dgjn18fsluryx.amplifyapp.com/\"]}"
+    "dependsOn": []
 }
