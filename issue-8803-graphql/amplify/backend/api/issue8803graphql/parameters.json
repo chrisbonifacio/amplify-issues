@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "issue8803graphql",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
