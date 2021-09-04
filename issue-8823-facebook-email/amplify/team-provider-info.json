@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-issue8823facebookema-dev-125352-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8823facebookema-dev-125352-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8823facebookema-dev-125352-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-issue8823facebookema-dev-125352-deployment",
+      "UnauthRoleName": "amplify-issue8823facebookema-dev-125352-unauthRole",
+      "StackName": "amplify-issue8823facebookema-dev-125352",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-issue8823facebookema-dev-125352/07310bc0-0a7c-11ec-ae59-1266e578c117",
+      "AmplifyAppId": "d3ianl5mpomf1i"
+    }
+  }
+}

@@ -1,19 +1,25 @@
 {
   "auth": {
-    "issue8727nextoauthf9241295": {
+    "issue8819nextauth6f26b658": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
-        "loginMechanism": ["EMAIL"],
-        "signupAttributes": ["EMAIL"],
+        "loginMechanisms": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
           "passwordPolicyCharacters": []
         },
         "mfaConfiguration": "OFF",
-        "mfaTypes": ["SMS"]
+        "mfaTypes": [
+          "SMS"
+        ]
       }
     }
   }

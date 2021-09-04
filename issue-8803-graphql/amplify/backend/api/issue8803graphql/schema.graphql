@@ -1,0 +1,29 @@
+type Business @model(subscriptions: null) {
+  id: ID! #slug
+  name: String!
+  owner: String!
+  status: BusinessStatusType!
+  fulfillmentDelay: Int
+  productionMode: Boolean
+  designWorkflowId: ID
+  proof: ProofConfig
+}
+
+enum BusinessStatusType {
+  ACTIVE
+  INACTIVE
+}
+
+type ProofConfig {
+  url: String!
+  email: AWSEmail!
+  verified: Boolean!
+  name: String!
+  delay: Int!
+}
+
+type Subscription {
+  onCreateBusiness: Business @aws_subscribe(mutations: ["createBusiness"])
+  onUpdateBusinessByID(id: ID!): Business
+    @aws_subscribe(mutations: ["updateBusiness"])
+}
