@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-issue8806apirest-dev-165024-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8806apirest-dev-165024-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8806apirest-dev-165024-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-issue8806apirest-dev-165024-deployment",
+      "UnauthRoleName": "amplify-issue8806apirest-dev-165024-unauthRole",
+      "StackName": "amplify-issue8806apirest-dev-165024",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-issue8806apirest-dev-165024/647ac920-159d-11ec-8cd0-0e0bc9a574ad",
+      "AmplifyAppId": "d1lwtm2qcw6gr5"
+    },
+    "categories": {
+      "function": {
+        "send400Error": {
+          "deploymentBucketName": "amplify-issue8806apirest-dev-165024-deployment",
+          "s3Key": "amplify-builds/send400Error-4e3252562b786e4e7638-build.zip"
+        }
+      }
+    }
+  }
+}

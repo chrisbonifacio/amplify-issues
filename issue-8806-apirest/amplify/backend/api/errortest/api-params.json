@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/error",
+      "lambdaFunction": "send400Error",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/error"
+    }
+  ],
+  "resourceName": "errortest",
+  "apiName": "errortest",
+  "functionArns": [
+    {
+      "lambdaFunction": "send400Error"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-issue8806apirest-dev-165024-authRole",
+    "unAuthRoleName": "amplify-issue8806apirest-dev-165024-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "send400Error",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

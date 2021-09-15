@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-issue8895deleteuser-dev-145409-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8895deleteuser-dev-145409-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8895deleteuser-dev-145409-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-issue8895deleteuser-dev-145409-deployment",
+      "UnauthRoleName": "amplify-issue8895deleteuser-dev-145409-unauthRole",
+      "StackName": "amplify-issue8895deleteuser-dev-145409",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-issue8895deleteuser-dev-145409/26c41740-158d-11ec-bdbe-0ac8327b506b",
+      "AmplifyAppId": "dbqj3phnnonl9"
+    }
+  }
+}
