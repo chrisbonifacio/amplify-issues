@@ -10,6 +10,11 @@
       "StackName": "amplify-issue8895deleteuser-dev-145409",
       "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-issue8895deleteuser-dev-145409/26c41740-158d-11ec-bdbe-0ac8327b506b",
       "AmplifyAppId": "dbqj3phnnonl9"
+    },
+    "categories": {
+      "auth": {
+        "issue8895deleteuser51aa1e2e": {}
+      }
     }
   }
 }

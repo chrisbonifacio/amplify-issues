@@ -1,6 +1,6 @@
 {
   "auth": {
-    "issue8895deleteuser51aa1e2e": {
+    "issue8894nextapirout2ab1725e": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
