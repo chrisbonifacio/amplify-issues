@@ -1,0 +1,45 @@
+{
+  "paths": [
+    {
+      "name": "/items",
+      "lambdaFunction": "issue8891datastore2d3c8ac5",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/GET"
+        ]
+      },
+      "policyResourceName": "/items"
+    }
+  ],
+  "resourceName": "apicb3f223a",
+  "apiName": "apicb3f223a",
+  "functionArns": [
+    {
+      "lambdaFunction": "issue8891datastore2d3c8ac5"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-issue8891datastore-dev-111948-authRole",
+    "unAuthRoleName": "amplify-issue8891datastore-dev-111948-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "issue8891datastore2d3c8ac5",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

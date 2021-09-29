@@ -74,7 +74,7 @@ const App = () => {
   const signIn = async () => {
     let result;
     try {
-      // result = await Auth.signIn({
+      // result = await Auth.signUp ({
       //   username: 'chris',
       //   password: 'test1234',
       //   attributes: {

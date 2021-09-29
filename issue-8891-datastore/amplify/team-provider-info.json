@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-issue8891datastore-dev-111948-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8891datastore-dev-111948-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8891datastore-dev-111948-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-issue8891datastore-dev-111948-deployment",
+      "UnauthRoleName": "amplify-issue8891datastore-dev-111948-unauthRole",
+      "StackName": "amplify-issue8891datastore-dev-111948",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-issue8891datastore-dev-111948/b2243900-1c81-11ec-8156-0eb02c81fec9",
+      "AmplifyAppId": "d45a0dmqqx6im"
+    },
+    "categories": {
+      "auth": {
+        "cognito257ca9e5": {}
+      }
+    }
+  }
+}

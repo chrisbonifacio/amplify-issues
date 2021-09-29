@@ -4,8 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Amplify } from "aws-amplify";
-import awsconfig from "./aws-exports";
-Amplify.configure(awsconfig);
+import config from "./aws-exports";
+Amplify.configure({
+  ...config,
+  DataStore: {
+    errorHandler: (error) => {
+      console.log({ error });
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>

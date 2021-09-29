@@ -1,11 +1,37 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Auth } from "aws-amplify";
+import { Auth, withSSRContext } from "aws-amplify";
 import styles from "../styles/Home.module.css";
+import { GetServerSideProps } from "next";
 
 type HomeProps = {
   user: {};
+};
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { Auth } = withSSRContext(context);
+
+  try {
+    const user: any = await Auth.currentAuthenticatedUser();
+    return {
+      props: {
+        authenticated: true,
+        user: {
+          username: user.username,
+          email: user.attributes.email,
+        },
+      },
+    };
+  } catch (err) {
+    return {
+      props: {},
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
 };
 
 export const Home: React.FC = ({ user }: HomeProps): JSX.Element => {
@@ -49,7 +75,7 @@ export const Home: React.FC = ({ user }: HomeProps): JSX.Element => {
         <button onClick={confirmSignUp}>Confirm Sign Up</button>
         <button onClick={signIn}>Sign In</button>
         <button onClick={signOut}>Sign Out</button>
-        <pre>User: {JSON.stringify({ user }, null, 2)}</pre>
+        <pre>User: {JSON.stringify(user, null, 2)}</pre>
       </main>
 
       <footer className={styles.footer}>

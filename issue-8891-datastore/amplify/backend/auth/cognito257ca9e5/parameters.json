@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "issue8895deleteuser51aa1e2e_identitypool_51aa1e2e",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "issue851aa1e2e",
-    "userPoolName": "issue8895deleteuser51aa1e2e_userpool_51aa1e2e",
+    "identityPoolName": "issue8891datastore_identitypool_257ca9e5",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "issue8257ca9e5",
+    "userPoolName": "issue8891datastore_userpool_257ca9e5",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -20,9 +20,7 @@
     "requiredAttributes": [
         "email"
     ],
-    "aliasAttributes": [
-        "email"
-    ],
+    "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
@@ -31,11 +29,11 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "issue851aa1e2e_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "issue8257ca9e5_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "51aa1e2e",
-    "resourceName": "issue8895deleteuser51aa1e2e",
     "authSelections": "identityPoolAndUserPool",
+    "resourceName": "cognito257ca9e5",
+    "sharedId": "257ca9e5",
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -47,10 +45,5 @@
             "UnauthRole",
             "Arn"
         ]
-    },
-    "useDefault": "default",
-    "userPoolGroupList": [],
-    "serviceName": "Cognito",
-    "usernameCaseSensitive": false,
-    "dependsOn": []
+    }
 }
