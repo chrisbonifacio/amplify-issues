@@ -15,6 +15,11 @@ export default function Home() {
     await Auth.signOut();
   }
 
+  async function showIdentityId() {
+    const user = await Auth.currentCredentials();
+    console.log(user.identityId);
+  }
+
   useEffect(() => {
     if (!user)
       Auth.currentAuthenticatedUser()
@@ -25,6 +30,12 @@ export default function Home() {
           console.error(err);
         });
   }, []);
+
+  useEffect(() => {
+    if (user) {
+      showIdentityId();
+    }
+  }, [user]);
 
   return (
     <div>

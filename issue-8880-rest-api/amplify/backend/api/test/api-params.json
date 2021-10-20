@@ -1,0 +1,39 @@
+{
+  "paths": [
+    {
+      "name": "/test",
+      "lambdaFunction": "test",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/PUT",
+          "/PATCH"
+        ]
+      },
+      "policyResourceName": "/test"
+    }
+  ],
+  "resourceName": "test",
+  "apiName": "test",
+  "functionArns": [
+    {
+      "lambdaFunction": "test"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-issue8880restapi-dev-120951-authRole",
+    "unAuthRoleName": "amplify-issue8880restapi-dev-120951-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "test",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

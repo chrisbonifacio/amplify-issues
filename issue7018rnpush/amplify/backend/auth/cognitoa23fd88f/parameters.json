@@ -1,0 +1,19 @@
+{
+    "identityPoolName": "issue7018rnpush_identitypool_a23fd88f",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "cognitoa23fd88f",
+    "sharedId": "a23fd88f",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}

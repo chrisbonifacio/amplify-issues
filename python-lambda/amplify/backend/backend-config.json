@@ -1,1 +1,9 @@
-{}
+{
+  "function": {
+    "pythonlambda6bd33da7": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
+}

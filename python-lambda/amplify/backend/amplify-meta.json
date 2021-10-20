@@ -11,5 +11,14 @@
       "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-pythonlambda-dev-172818/36aa16a0-006b-11ec-ae1b-0a03f460991d",
       "AmplifyAppId": "d3l1ohgm50eg0f"
     }
+  },
+  "function": {
+    "pythonlambda6bd33da7": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastDevBuildTimeStamp": "2021-10-04T19:15:49.681Z",
+      "lastBuildType": "DEV"
+    }
   }
 }

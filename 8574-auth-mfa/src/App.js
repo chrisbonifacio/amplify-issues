@@ -28,6 +28,7 @@ function App() {
     try {
       const user = await Auth.currentAuthenticatedUser();
       setState((prev) => ({ ...prev, user }));
+      console.log({ user });
     } catch (error) {
       console.log(error);
     }
@@ -114,7 +115,7 @@ function App() {
   const linkTOTP = async (code) => {
     try {
       const user = await Auth.currentAuthenticatedUser();
-      const res = await Auth.verifyToken(user, code);
+      const res = await Auth.verifyTotpToken(user, code);
       console.log(res);
     } catch (error) {
       console.log(error);
@@ -125,7 +126,7 @@ function App() {
     try {
       const user = await Auth.currentAuthenticatedUser();
       const res = await Auth.setPreferredMFA(user, "TOTP");
-      console.log(res);
+      console.log("enabling TOTP MFA:", res);
     } catch (error) {
       console.log(error);
     }
@@ -135,7 +136,7 @@ function App() {
     try {
       const user = await Auth.currentAuthenticatedUser();
       const res = await Auth.setPreferredMFA(user, "SMS");
-      console.log(res);
+      console.log("enabling SMS MFA:", res);
     } catch (error) {
       console.log(error);
     }
@@ -145,7 +146,7 @@ function App() {
     try {
       const user = await Auth.currentAuthenticatedUser();
       const res = await Auth.setPreferredMFA(user, "NOMFA");
-      console.log(res);
+      console.log("disabling MFA:", res);
     } catch (error) {
       console.log(error);
     }

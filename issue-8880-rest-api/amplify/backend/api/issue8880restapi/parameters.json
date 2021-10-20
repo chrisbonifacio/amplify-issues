@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "issue8880restapi",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authissue8880restapi6e94eec4",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

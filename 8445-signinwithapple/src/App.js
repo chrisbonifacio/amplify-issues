@@ -1,8 +1,9 @@
 import React from "react";
 import Amplify, { Auth, Hub } from "aws-amplify";
-import { AmplifyAuthenticator } from "@aws-amplify/ui-react";
 import awsconfig from "./aws-exports";
 Amplify.configure(awsconfig);
+
+Amplify.Logger.LOG_LEVEL = "DEBUG";
 
 const App = () => {
   const initialState = { session: null, user: null, userInfo: null, error: "" };
@@ -40,10 +41,10 @@ const App = () => {
     try {
       const user = await Auth.currentAuthenticatedUser();
       setState((prev) => ({ ...prev, user }));
-      console.log(user);
+      console.log({ user });
     } catch (error) {
       setState((prev) => ({ ...prev, error }));
-      console.error(error);
+      console.error({ error });
     }
   };
 
@@ -56,22 +57,24 @@ const App = () => {
     }
   };
 
+  const authListener = ({ payload }) => {
+    switch (payload.event) {
+      case "signIn":
+      case "cognitoHostedUI":
+        getUser();
+        break;
+      default:
+        console.log({ payload });
+    }
+  };
+
   const { user, error } = state;
 
   React.useEffect(() => {
     if (!user) getUser();
-    Hub.listen("auth", ({ payload }) => {
-      console.log({ payload });
-      switch (payload.event) {
-        case "signIn":
-          getUser();
-          break;
-        default:
-          console.error("unrecognized event");
-      }
-    });
+    Hub.listen("auth", authListener);
 
-    return () => Hub.remove("auth");
+    return () => Hub.remove("auth", authListener);
   }, []);
 
   return (
@@ -81,15 +84,13 @@ const App = () => {
 
       <button onClick={handleOpenHostedUI}>Open Hosted UI</button>
 
-      <AmplifyAuthenticator>
-        <button onClick={handleSignOut}>
-          Sign Out {user?.attributes?.email}
-        </button>
-        <div style={{ marginTop: "50px" }}>
-          <h2>Current Authenticated User</h2>
-          <pre>{JSON.stringify({ user, error }, null, 2)}</pre>
-        </div>
-      </AmplifyAuthenticator>
+      <button onClick={handleSignOut}>
+        Sign Out {user?.attributes?.email}
+      </button>
+      <div style={{ marginTop: "50px" }}>
+        <h2>Current Authenticated User</h2>
+        <pre>{JSON.stringify({ user: user, error }, null, 2)}</pre>
+      </div>
     </div>
   );
 };

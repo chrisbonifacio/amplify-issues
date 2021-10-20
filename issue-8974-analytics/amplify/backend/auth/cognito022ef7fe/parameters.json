@@ -1,0 +1,19 @@
+{
+    "identityPoolName": "issue8974analytics_identitypool_022ef7fe",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "cognito022ef7fe",
+    "sharedId": "022ef7fe",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}
