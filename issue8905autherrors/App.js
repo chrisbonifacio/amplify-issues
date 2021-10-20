@@ -6,7 +6,8 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
+import React from 'react';
+import type {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -15,7 +16,6 @@ import {
   Text,
   useColorScheme,
   View,
-  Button,
 } from 'react-native';
 
 import {
@@ -26,18 +26,12 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import {Auth} from '@aws-amplify/auth';
+import {withAuthenticator} from 'aws-amplify-react-native';
+import {Amplify} from 'aws-amplify';
+import config from './src/aws-exports';
+Amplify.configure(config);
 
-Auth.configure({
-  userPoolId: 'us-east-1_76GjwKnsA',
-  userPoolWebClientId: '2pf5d8ga223dmbp9devcv98pmd',
-  identityPoolId: 'us-east-1:aa6288a1-8b22-4da3-9857-ad8298ac9587',
-  region: 'us-east-1',
-  federatedTarget: 'COGNITO_USER_POOLS',
-  authenticationFlowType: 'USER_PASSWORD_AUTH',
-});
-
-const Section = ({children, title}) => {
+const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -63,33 +57,11 @@ const Section = ({children, title}) => {
   );
 };
 
-const App = () => {
-  const [result, setResult] = useState(null);
+const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  const signIn = async () => {
-    let result;
-    try {
-      // result = await Auth.signUp ({
-      //   username: 'chris',
-      //   password: 'test1234',
-      //   attributes: {
-      //     email: 'christopher.bonifacio+test@gmail.com',
-      //   },
-      // });
-
-      // result = await Auth.confirmSignUp('chris', '095188');
-
-      result = await Auth.signIn('chris', 'test');
-    } catch (err) {
-      console.log('error signing up', err);
-      result = err;
-    }
-    setResult(result);
   };
 
   return (
@@ -103,12 +75,20 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Sign In">
-            <Button title="Click Here to sign in" onPress={signIn} />
+          <Section title="Step One">
+            Edit <Text style={styles.highlight}>App.js</Text> to change this
+            screen and then come back to see your edits.
           </Section>
-          <Section title="Result">
-            <Text>{JSON.stringify(result, null, 2)}</Text>
+          <Section title="See Your Changes">
+            <ReloadInstructions />
           </Section>
+          <Section title="Debug">
+            <DebugInstructions />
+          </Section>
+          <Section title="Learn More">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -134,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default withAuthenticator(App);

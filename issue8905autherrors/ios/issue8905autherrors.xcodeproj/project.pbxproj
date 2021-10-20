@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3F955E56EB3183C0BCC477A9 /* libPods-issue8905autherrors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97153FA3581011012F18A257 /* libPods-issue8905autherrors.a */; };
+		361417FC72D35C97DB3379D5 /* libPods-issue8905autherrors-issue8905autherrorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B37B26B7AE4D81210FDDA4 /* libPods-issue8905autherrors-issue8905autherrorsTests.a */; };
+		605DB39A4251C8589F981279 /* libPods-issue8905autherrors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12EAF3C0BE5737C19BE56297 /* libPods-issue8905autherrors.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C54E28CB62D1A8D326FFA1DE /* libPods-issue8905autherrors-issue8905autherrorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F16AC9260AE0593531FF7D9 /* libPods-issue8905autherrors-issue8905autherrorsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +30,19 @@
 		00E356EE1AD99517003FC87E /* issue8905autherrorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = issue8905autherrorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* issue8905autherrorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = issue8905autherrorsTests.m; sourceTree = "<group>"; };
-		038B9281083831315BCDA613 /* Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		12EAF3C0BE5737C19BE56297 /* libPods-issue8905autherrors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-issue8905autherrors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* issue8905autherrors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = issue8905autherrors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = issue8905autherrors/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = issue8905autherrors/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = issue8905autherrors/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = issue8905autherrors/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = issue8905autherrors/main.m; sourceTree = "<group>"; };
-		3AA715EBDB60380527AF7EF6 /* Pods-issue8905autherrors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors.debug.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors.debug.xcconfig"; sourceTree = "<group>"; };
-		5699EC7593C1E6793BE71F22 /* Pods-issue8905autherrors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors.release.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors.release.xcconfig"; sourceTree = "<group>"; };
-		6F7B20085A23578D7764452E /* Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7F16AC9260AE0593531FF7D9 /* libPods-issue8905autherrors-issue8905autherrorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-issue8905autherrors-issue8905autherrorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DABDC7FE234D8D696D096D5 /* Pods-issue8905autherrors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors.debug.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors.debug.xcconfig"; sourceTree = "<group>"; };
+		3D4D63B5C5470283C863D591 /* Pods-issue8905autherrors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors.release.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors.release.xcconfig"; sourceTree = "<group>"; };
+		4DF52879B9B69B2E85595962 /* Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67B37B26B7AE4D81210FDDA4 /* libPods-issue8905autherrors-issue8905autherrorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-issue8905autherrors-issue8905autherrorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = issue8905autherrors/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		97153FA3581011012F18A257 /* libPods-issue8905autherrors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-issue8905autherrors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		974BE0306AC63D2306725BA5 /* Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig"; path = "Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54E28CB62D1A8D326FFA1DE /* libPods-issue8905autherrors-issue8905autherrorsTests.a in Frameworks */,
+				361417FC72D35C97DB3379D5 /* libPods-issue8905autherrors-issue8905autherrorsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F955E56EB3183C0BCC477A9 /* libPods-issue8905autherrors.a in Frameworks */,
+				605DB39A4251C8589F981279 /* libPods-issue8905autherrors.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +100,22 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				97153FA3581011012F18A257 /* libPods-issue8905autherrors.a */,
-				7F16AC9260AE0593531FF7D9 /* libPods-issue8905autherrors-issue8905autherrorsTests.a */,
+				12EAF3C0BE5737C19BE56297 /* libPods-issue8905autherrors.a */,
+				67B37B26B7AE4D81210FDDA4 /* libPods-issue8905autherrors-issue8905autherrorsTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79D7E856C588F2DF66581077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DABDC7FE234D8D696D096D5 /* Pods-issue8905autherrors.debug.xcconfig */,
+				3D4D63B5C5470283C863D591 /* Pods-issue8905autherrors.release.xcconfig */,
+				4DF52879B9B69B2E85595962 /* Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig */,
+				974BE0306AC63D2306725BA5 /* Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -121,7 +133,7 @@
 				00E356EF1AD99517003FC87E /* issue8905autherrorsTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				8C976E149445750C474C4CFF /* Pods */,
+				79D7E856C588F2DF66581077 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -137,18 +149,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8C976E149445750C474C4CFF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3AA715EBDB60380527AF7EF6 /* Pods-issue8905autherrors.debug.xcconfig */,
-				5699EC7593C1E6793BE71F22 /* Pods-issue8905autherrors.release.xcconfig */,
-				6F7B20085A23578D7764452E /* Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig */,
-				038B9281083831315BCDA613 /* Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "issue8905autherrorsTests" */;
 			buildPhases = (
-				B95BB3BC35B8B2B6E1772A92 /* [CP] Check Pods Manifest.lock */,
+				6A46F460EC75D01A19260382 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				A9C5C6E13D7D3DF284DE566A /* [CP] Embed Pods Frameworks */,
-				BA9E29BE9BCF9F7050FA1B46 /* [CP] Copy Pods Resources */,
+				2E7688E53488CB40096C4AB3 /* [CP] Embed Pods Frameworks */,
+				628EC52A52A80C22F1F91A06 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "issue8905autherrors" */;
 			buildPhases = (
-				B0B81BCE7E3F0A119C684D7B /* [CP] Check Pods Manifest.lock */,
+				BDEB823234556D497B8F22DC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				EA84EFF9782119F872C09E28 /* [CP] Embed Pods Frameworks */,
-				DF9B2DE57C2376988DB9D312 /* [CP] Copy Pods Resources */,
+				725AABDE96E4277440B65E56 /* [CP] Embed Pods Frameworks */,
+				67C6EDC5C57AF95B4E8D2F82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,7 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		A9C5C6E13D7D3DF284DE566A /* [CP] Embed Pods Frameworks */ = {
+		2E7688E53488CB40096C4AB3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,29 +282,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B0B81BCE7E3F0A119C684D7B /* [CP] Check Pods Manifest.lock */ = {
+		628EC52A52A80C22F1F91A06 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-issue8905autherrors-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B95BB3BC35B8B2B6E1772A92 /* [CP] Check Pods Manifest.lock */ = {
+		67C6EDC5C57AF95B4E8D2F82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A46F460EC75D01A19260382 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,41 +338,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA9E29BE9BCF9F7050FA1B46 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors-issue8905autherrorsTests/Pods-issue8905autherrors-issue8905autherrorsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF9B2DE57C2376988DB9D312 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA84EFF9782119F872C09E28 /* [CP] Embed Pods Frameworks */ = {
+		725AABDE96E4277440B65E56 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +353,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-issue8905autherrors/Pods-issue8905autherrors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDEB823234556D497B8F22DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-issue8905autherrors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -429,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F7B20085A23578D7764452E /* Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig */;
+			baseConfigurationReference = 4DF52879B9B69B2E85595962 /* Pods-issue8905autherrors-issue8905autherrorsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038B9281083831315BCDA613 /* Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig */;
+			baseConfigurationReference = 974BE0306AC63D2306725BA5 /* Pods-issue8905autherrors-issue8905autherrorsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AA715EBDB60380527AF7EF6 /* Pods-issue8905autherrors.debug.xcconfig */;
+			baseConfigurationReference = 1DABDC7FE234D8D696D096D5 /* Pods-issue8905autherrors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5699EC7593C1E6793BE71F22 /* Pods-issue8905autherrors.release.xcconfig */;
+			baseConfigurationReference = 3D4D63B5C5470283C863D591 /* Pods-issue8905autherrors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

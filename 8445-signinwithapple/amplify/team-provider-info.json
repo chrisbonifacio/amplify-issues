@@ -13,7 +13,10 @@
     },
     "categories": {
       "auth": {
-        "8445signinwithapple626ba43a": {}
+        "8445signinwithapple626ba43a": {
+          "googleClientId": "606378962826-bg3gebhot6jb69ctrd7fvkm3oi2bqju4.apps.googleusercontent.com",
+          "appleAppId": "KrlOT8LQhD2L_p-HKVvBclDm"
+        }
       }
     }
   }

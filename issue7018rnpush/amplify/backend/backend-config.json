@@ -1,0 +1,35 @@
+{
+  "auth": {
+    "cognitoa23fd88f": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "PREFERRED_USERNAME"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": []
+        },
+        "mfaTypes": [],
+        "verificationMechanisms": []
+      }
+    }
+  },
+  "notifications": {
+    "issue7018rnpushIg8m1": {
+      "service": "Pinpoint",
+      "channels": [
+        "APNS",
+        "FCM"
+      ]
+    }
+  },
+  "analytics": {
+    "issue7018rnpushIg8m1": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

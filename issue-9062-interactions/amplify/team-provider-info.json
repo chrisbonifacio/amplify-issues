@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-issue9062interaction-dev-115330-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue9062interaction-dev-115330-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue9062interaction-dev-115330-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-issue9062interaction-dev-115330-deployment",
+      "UnauthRoleName": "amplify-issue9062interaction-dev-115330-unauthRole",
+      "StackName": "amplify-issue9062interaction-dev-115330",
+      "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-issue9062interaction-dev-115330/e0a5b960-31bd-11ec-940d-061cb6bb06f6",
+      "AmplifyAppId": "d1n794srkghrd7"
+    },
+    "categories": {
+      "auth": {
+        "cognitoc57e17a0": {}
+      }
+    }
+  }
+}

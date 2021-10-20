@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-issue8880restapi-dev-120951-authRole",
+      "UnauthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8880restapi-dev-120951-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::519537122948:role/amplify-issue8880restapi-dev-120951-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-issue8880restapi-dev-120951-deployment",
+      "UnauthRoleName": "amplify-issue8880restapi-dev-120951-unauthRole",
+      "StackName": "amplify-issue8880restapi-dev-120951",
+      "StackId": "arn:aws:cloudformation:us-east-1:519537122948:stack/amplify-issue8880restapi-dev-120951/d950b2b0-2208-11ec-a690-121a9bcd58a3",
+      "AmplifyAppId": "d34e10hnsg72j"
+    },
+    "categories": {
+      "auth": {
+        "issue8880restapi6e94eec4": {}
+      },
+      "function": {
+        "test": {
+          "deploymentBucketName": "amplify-issue8880restapi-dev-120951-deployment",
+          "s3Key": "amplify-builds/test-72307257366a776d7873-build.zip"
+        }
+      }
+    }
+  }
+}

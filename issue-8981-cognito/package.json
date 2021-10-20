@@ -1,0 +1,17 @@
+{
+  "name": "issue-8981-cognito",
+  "version": "1.0.0",
+  "description": "testing amazon-cognito-identity-js package",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Chris Bonifacio",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^5.2.0",
+    "aws-sdk": "^2.1002.0",
+    "axios": "^0.22.0",
+    "express": "^4.17.1"
+  }
+}

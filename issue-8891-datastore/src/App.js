@@ -11,7 +11,6 @@ function App() {
   const saveTodo = async () => {
     try {
       const saved = await DataStore.save(new Todo({}));
-      console.log({ saved });
 
       if (!saved.name) {
         const toDelete = await DataStore.query(Todo, saved.id);

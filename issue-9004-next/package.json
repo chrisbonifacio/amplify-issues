@@ -1,0 +1,25 @@
+{
+  "name": "issue-9004-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-react": "^1.2.20",
+    "@emotion/css": "^11.1.3",
+    "aws-amplify": "^4.3.2",
+    "install": "^0.13.0",
+    "next": "11.1.2",
+    "npm": "^8.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.0.0",
+    "eslint-config-next": "11.1.2"
+  }
+}
