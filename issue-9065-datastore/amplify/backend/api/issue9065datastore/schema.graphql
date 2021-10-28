@@ -1,0 +1,18 @@
+type Athlete
+  @model
+  @key(name: "byTeam", fields: ["teamID"])
+  @key(name: "byPhone", fields: ["phoneNumber"]) {
+  id: ID!
+  firstName: String
+  lastName: String
+  email: AWSEmail
+  teamID: ID
+  phoneNumber: AWSPhone
+  playerNumber: Int
+  playerPosition: String
+  dateOfBirth: AWSDate
+  avatar: String
+  active: Boolean
+  emoji: String
+  firstTouchSent: Boolean
+}

@@ -1,0 +1,49 @@
+type Campaign
+  @model
+  @auth(rules: [{ allow: owner }, { allow: groups, groups: ["admin"] }]) {
+  id: ID!
+  name: String!
+  description: String!
+  stories: [Story] @connection(keyName: "byCampaign", fields: ["id"])
+}
+
+enum BackgroundType {
+  COLOR
+  IMAGE
+  VIDEO
+}
+
+type Widget
+  @model
+  @auth(rules: [{ allow: owner }, { allow: groups, groups: ["admin"] }])
+  @key(name: "byPage", fields: ["pageId"]) {
+  id: ID!
+  pageId: ID!
+  name: String!
+  category: String!
+}
+
+type Page
+  @model
+  @auth(rules: [{ allow: owner }, { allow: groups, groups: ["admin"] }])
+  @key(name: "byStory", fields: ["storyId"]) {
+  id: ID!
+  storyId: ID!
+  backgroundType: BackgroundType!
+  backgroundColor: String
+  backgroundSource: String
+  widgets: [Widget] @connection(keyName: "byPage", fields: ["id"])
+}
+
+type Story
+  @model
+  @auth(rules: [{ allow: owner }, { allow: groups, groups: ["admin"] }])
+  @key(name: "byCampaign", fields: ["campaignId"]) {
+  id: ID!
+  campaignId: ID!
+  name: String!
+  width: String
+  height: String
+  purpose: String
+  pages: [Page] @connection(keyName: "byStory", fields: ["id"])
+}
