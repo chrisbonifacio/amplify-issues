@@ -10,6 +10,11 @@
       "StackName": "amplify-issue9123datastore-dev-114143",
       "StackId": "arn:aws:cloudformation:us-east-2:519537122948:stack/amplify-issue9123datastore-dev-114143/8eddb850-3805-11ec-a33d-0a65106a3574",
       "AmplifyAppId": "d2566ix7251sbt"
+    },
+    "categories": {
+      "auth": {
+        "issue9123datastorecb72c4fb": {}
+      }
     }
   }
 }

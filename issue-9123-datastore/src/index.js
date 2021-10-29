@@ -2,11 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import { Amplify } from "aws-amplify";
+import { AmplifyAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
+import { AuthState, onAuthUIStateChange } from "@aws-amplify/ui-components";
+import awsconfig from "./aws-exports";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+Amplify.configure(awsconfig);
 
 export default function Index() {
-  return (
+  const [authState, setAuthState] = React.useState();
+  const [user, setUser] = React.useState();
+
+  React.useEffect(() => {
+    return onAuthUIStateChange((nextAuthState, authData) => {
+      setAuthState(nextAuthState);
+      setUser(authData);
+    });
+  }, []);
+
+  return authState === AuthState.SignedIn && user ? (
     <Router>
       <div>
         <nav>
@@ -22,6 +37,7 @@ export default function Index() {
             </li>
           </ul>
         </nav>
+        <AmplifySignOut />
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -38,6 +54,8 @@ export default function Index() {
         </Switch>
       </div>
     </Router>
+  ) : (
+    <AmplifyAuthenticator />
   );
 }
 
