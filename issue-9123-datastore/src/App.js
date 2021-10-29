@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Amplify, DataStore } from "aws-amplify";
+import { Amplify, DataStore, Logger } from "aws-amplify";
 import { Post } from "./models";
 import awsconfig from "./aws-exports";
 Amplify.configure(awsconfig);
